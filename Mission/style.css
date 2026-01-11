@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column; /* stack content vertically */
+    justify-content:flex-start; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+    min-height: 100vh;       /* full viewport height */
+    margin: 0;               /* remove default body spacing */
+    text-align: center;      /* center text inside elements */
+}
+.top {
+    /* optional styling for spacing */
+    margin-bottom: 10px; /* separates from the paragraphs */
+}
+.top hr {
+    width: 150%;
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.212);
+    position: relative;        /* needed for transform */
+    left: 50%;                 /* move start to middle */
+    transform: translateX(-50%); 
+    margin-top: -20px;
+
+}
+.top h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    word-spacing: 3px;
+}
+h1 {
+    margin-bottom: -6px;
+}
+h6 {
+    color: rgb(84, 111, 228);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    font-size: 11px;
+}
+.content {
+    max-width: 478px;    /* same width as header wrapper */
+    margin: 0 auto;
+    text-align: left;    /* paragraphs aligned nicely */
+    padding: 0 10px;     
+}
+#ital {
+    font-style: italic;
+}
+.list {
+    text-indent: 0px;  /* indents the first line of each paragraph */
+    padding-left: 35px;     /* indent for bullet points */
+    margin: 10px 0;
+}
+.list li {
+    margin: 0 auto 20px auto; 
+    max-width: 445px;
+}
+#image {
+    text-align: center;  /* centers the image inside the div */
+    margin-top: 40px;    
+}
+#image img {
+    max-width: 120px;    /* adjust to make the image smaller */
+    width: 100%;         /* responsive if container shrinks */
+    height: auto;        /* maintain aspect ratio */
+    display: inline-block; /* ensures it respects text-align */
+}
